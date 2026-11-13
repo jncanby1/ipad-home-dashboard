@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Home Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+  <header class="topbar">
+    <div class="sun-icon" aria-hidden="true">☀</div>
+    <div class="welcome"><h1 id="greeting">Good Morning!</h1><p id="today">Loading date...</p><p id="clock">--:--</p></div>
+    <div class="cross-icon" aria-hidden="true">✝</div>
+  </header>
+  <main class="cards">
+    <section class="card weather-card"><h2>☀ Weather</h2><div class="weather-main"><span id="temp">--°</span><span id="conditions">Loading weather...</span></div><p id="highlow">High --° · Low --°</p><div class="weather-settings"><input id="city" type="text" value="Shepherdstown" aria-label="Weather city"><button id="weather-button">Update city</button></div><p class="muted" id="weather-status"></p></section>
+    <section class="card calendar-card"><h2>▦ Calendar</h2><ul id="events"></ul><form id="event-form"><input id="event-time" type="time" aria-label="Event time" required><input id="event-title" type="text" maxlength="60" placeholder="Add an event" aria-label="Event title" required><button type="submit">+</button></form><p class="muted">Events saved on this iPad</p></section>
+    <section class="card verse-card"><h2>✝ Jesus</h2><div class="verse-wrap"><p id="verse"></p><p class="verse-ref" id="verse-ref"></p></div><button id="next-verse">Next verse →</button></section>
+    <section class="card dog-card"><h2>🐾 Animation</h2><div class="dog-scene" id="dog-scene"><div class="scene-sun">☀</div><div id="dog" class="dog" role="button" aria-label="Tap the dog"><div class="dog-tail"></div><div class="dog-body"></div><div class="dog-leg leg-one"></div><div class="dog-leg leg-two"></div><div class="dog-head"><div class="dog-ear"></div><div class="dog-eye"></div><div class="dog-nose"></div></div></div><div class="ground"></div><div class="dog-bubble" id="dog-bubble">Woof!</div></div><p class="dog-caption" id="dog-caption">Your buddy is exploring. Tap him!</p></section>
+  </main>
+  <footer>HOME • PEACE • PURPOSE</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
